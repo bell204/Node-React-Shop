@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>연락처 목록 페이지</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+
+<script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+    <style>
+    #header{
+      padding: 20px;
+      height: 30px;
+    }
+    #function{
+      display: none;
+    }
+    #add{
+      padding:10px;
+    }
+    a{
+      padding: 30px;
+      width:15%;
+    }
+    img{
+      width:200px;
+      height:200px;
+    }
+
+
+    </style>
+  </head>
+  <body align="center">
+
+    <div data-role="header" id="header" align="center">친구 목록
+      <div id="etc" align="right">click me</div>
+     </div>
+
+
+      <div id="function" align="right">
+        <a href="/" type="button">logout</a><br>
+        <a href="/chat" id="visitRoom" type="button">채팅방입장</a><br>
+      </div>
+
+
+ <table align="center" width="80%">
+   <br>
+  <tr>
+    <th><input type="text" placeholder="이름검색"></th>
+      <th width="20%"><button>친구추가</button></th>
+  </tr>
+  <th width="80%"><p align="left">내 프로필 : <%= session %></p></th>
+
+  <tr><th><img align="left" src="img/bo.png"></th><tr>
+</table>
+<br>
+
+<hr width="80%">
+
+<table align="center" width="80%">
+
+<br>
+<tr>
+  <th colspan='2'><p align="left">친구목록</p></th>
+</tr>
+<tr>
+  <th width="80%"><button>friend id</button></th>
+    <th width="20%"><button>delete</button></th>
+</tr>
+
+
+</table>
+
+<script>
+      $( "#etc" ).click(function() {
+        $( "#function" ).toggle();
+      });
+    </script>
+
+  </body>
+</html>

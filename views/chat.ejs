@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chatting room </title>
+      <script src="js/chat.js"></script>
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+
+<script src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <script src='/socket.io/socket.io.js'></script>
+
+
+<style>
+#userid{
+  padding:10px;
+}
+#header{
+  padding:30px;
+}
+
+</style>
+  </head>
+
+  <body>
+
+    <div id="joinButtonWrap1">
+      <div data-role="header" id="header" align="center">채팅방
+           </div>
+             <div id="userid" align="right"><%= session %> 님 <br>
+                <a href="/friendList" type="button">연락처 목록</a><br>
+                <a href="/" type="button">logout</a>
+             </div>
+
+         </div>
+
+         <div id="chat1">
+            <input type="text" id="message" placeholder="메시지를 입력하세요">
+            <input type="button" id="submit" value="submit">
+            <div id="log"></div>
+          </div>
+
+   </div>
+
+
+  </body>
+</html>

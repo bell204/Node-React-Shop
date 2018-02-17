@@ -1,0 +1,17 @@
+
+input[type="submit"]{
+height:50px;
+background:orangered;
+color:white;
+border-radius:10px;
+}
+a{
+background:gray;
+color:white;
+border-color:black;
+}
+#facebook{
+  margin:10px;
+  background: #3b5998; color:#ffffff;
+  width:270px;
+}
